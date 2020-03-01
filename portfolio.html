@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ user-select: none;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       .inform h1{
+            color: #fff;
+            padding-top: 0px;
+           padding-top: 150px;
+
+        }
+        body{
+            background: rgb(12, 13,15);;
+        }
+        .containerf{
+            width: 90%;
+            position: relative;
+            left: 10%;
+        }
+        .mainf{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .group{
+            width: 100%;
+        }
+
+        .rowa,.rowb,.rowc{
+            width: 350px;
+            display: block;
+        }
+        .pic{
+            width: 350px;
+            position: relative;
+            margin: 20px auto;
+            overflow: hidden; 
+            border-radius: 10px;
+        }
+        .group{
+            position: relative;
+            top: 100px;
+            min-width: 100%;
+            max-width: 1000px;
+            margin: 10px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+       .pic  img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+       
+
+        .img:hover{
+            width: 110%;
+        }
+  
+           
+         
+    
+/* navigation start */
+.header{
+        background:rgb(12, 13,15);
+        width: 10%;
+        height: 100%;
+        min-width: 80px;
+        position: absolute;
+        left: 0;
+        position: fixed;
+        z-index: 2;
+        border-right: 2px solid #000;
+
+    }
+    .icon{
+        width: 50%;
+        height: 430px;
+        position: relative;
+        margin: auto;
+    }
+    .fa-cont{
+        width: 70%;
+        height: 430px;
+        position: relative;
+        margin: auto;
+    }
+   
+    .fa-cont i{
+           font-size: 30px;
+           color: #fff;
+            position: relative;
+            margin: auto;
+           margin-top: 20px;
+           background: #000;
+           cursor: pointer;
+        }
+      
+    .logo{
+        width: 100%;
+        position: relative;
+        height: 90px;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        border-bottom: 5px solid #000;
+    }
+    .logo-img{
+        position: relative;
+        margin:auto;
+        width: 50%;
+    }
+  
+    /* <!-- navigation end --> */
+    .toggle{
+        float: right;
+        margin-right: 2%;
+        margin-top: 10px;
+    }
+    .toggle div{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    .green-h1{
+        width: 40px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        top: 0px;
+        display: flex;
+   
+    }
+        .ray1{
+        width: 115px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        top: 0px;
+    }
+      .ray1 .hr-a{
+        width: 32px;
+        position: relative;
+       top: 50%; 
+        color: #25ca7f;
+        left: 3px;
+    }
+    .ray1 .hr-b{
+        width: 32px;
+        position: relative;
+       top: -50%;
+      float: right;
+      color: #25ca7f;
+    }
+    .h1-a{
+        width: 16px;
+        height: 16px;
+        border-radius: 50px 50px 0px 50px;
+        transform: rotate(-45deg);     margin: auto;
+        border: 2px solid #25ca7f;
+    }
+    .h1-b{
+        width: 16px;
+        height: 16px;
+        border: 2px solid #25ca7f;
+        border-radius: 50px 50px 50px 0px;
+        transform: rotate(45deg);     margin: auto;
+        position: relative;
+        left: 5px;
+    }
+    .local-nav{
+        background: #000;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+        float: right;
+        color: #fff;
+         display: none;
+    }
+    .toggle{
+        float: right;
+        margin-right: 5%;
+        margin-top: -42px;
+        z-index: 1;
+    }
+    .toggle div{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin-top: 5px;
+        position: relative;
+    }
+    .samosa{
+        width: 200px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        left: 5%;
+    }
+    .samosa h1{
+        text-align: center;
+    }
+    .main-fa{
+        width: 100%;
+        margin: auto;
+    }
+    .deal{
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        border-top: 5px solid #000;
+    }
+    .deal-box{
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+    .deal i{
+        font-size:20px ;
+        position: relative;
+        left: 25%;
+        top: 10px;
+        margin-top: 10px;
+        color: #fff;
+    }
+    @media (max-height:650px){
+        .deal{
+            position: relative;
+            top: -70px;
+        }
+    }
+    @media (max-width:1297px){
+ 
+            .group .rowc{
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .rowc .pic{
+                margin-left:20px;
+            }
+            .pic8{
+                position: relative;
+              right: 1%;
+              width: 45%;
+            }
+    }
+    @media (max-width:800px){
+        .rowa,.rowb,.rowc{
+            width: 100%;
+            overflow: hidden;
+        }
+        .pic{
+            width: 100%;
+            margin: auto;
+        }
+        .rowc .pic{
+                margin-left:0px;
+            }
+            .pic8{
+                position: relative;
+                right: 0;
+            }
+    }
+  
+    @media (max-width:900px){
+            .header{
+                display: none;
+            }
+            .local-nav{
+                display: block;
+            }
+            .containerf{
+                width: 100%;
+                position: relative;
+                left: 0;
+            }
+            .group{
+                width: 90%;
+            }
+    }
+    .Navbar__ToggleShow {
+    display: block;
+  }
+    .tab{
+      width: 35%;
+      background: #000;
+      color: #fff;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      border-radius: 50px;
+      flex-wrap: wrap;
+      min-width: 250px;
+      padding: 0 20px;
+      box-shadow: 0px  0px 5px #ffff;
+     
+    } 
+    .tab div{
+      text-align: center;
+      line-height: 50px;
+      font-weight: 900;
+      border-radius: 30px;
+      padding: 0 30px;
+      transition: .5s;
+      cursor: pointer;
+    }
+    .tab-a{
+      background: #25ca7f;
+    }
+    .tab-c,.tab-b{
+            margin: auto;
+    }
+    .shade{
+        width: 100%;
+        height: 3000px;
+        background: #25ca7f;
+        position:absolute;
+        opacity: .8;
+        color: #fff;
+        display: none;
+    }
+    .pic:hover  .shade{
+        display: block;
+    }
+    .shade-inform{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+       position: relative;
+    }
+    .shade h1{
+            text-align: center;
+    }
+    .shade h3{
+        position: relative;
+        top: 50px;
+        padding: 0 10px;
+    }
+    .shade i{
+        float: right;
+        font-size: 30px;
+        position: relative;
+        top: 30px;
+        padding: 0 10px;
+    }
+    /* 
+    .shade-box-a,  .shade-box-b{
+        height: 50%;
+          top: 5%;
+    }
+      .shade-box-f,   .shade-box-i{
+        height: 50%;
+          top: 5%;
+      }
+      .shade-box-d,   .shade-box-g{
+        height: 50%;
+          top: 3%;
+      }
+      .shade-box-e,   .shade-box-h{
+          height: 50%;
+          top: 5%;
+      }
+       .shade-box-c{
+           width: 100%;
+           height: 50%;
+            top: 5%;
+      } */
+    </style>
+</head>
+<body>
+   
+    <!-- navigation -->
+ 
+<div id="head" class="header">
+    <div class="logo">
+        <div class="logo-img">
+        <img src="logo.png">
+        </div>
+    </div>
+    <div class="icon">
+        <div class="fa-cont">
+            <a href="index.html"><div class="main-fa"> <i class="fax fas fa-house-damage"></i></div></a> 
+           <a href="about.html"><div class="main-fa"><i class="fax fas fa-user-tie"></i></div></a>
+           <a href="resume.html"><div class="main-fa"> <i class="fax fas fa-address-book"></i></div></a>
+           <a href="portfolio.html"><div class="main-fa"> <i class="fax fas fa-briefcase"></i></div></a>
+           <a href="blog.html"><div class="main-fa"> <i  class="fax fas fa-receipt"></i></div></a>
+           <a href="contact.html"><div class="main-fa"><i class="fax fas fa-envelope"></i></div></a>
+        </div>
+    </div>
+
+    <div class="deal">
+        <div class="deal-box">
+         <a href=""><div class="main-fa"> <i class=" fab fa-facebook-f"></i></div></a> 
+         <a href=""><div class="main-fa"><i class=" fab fa-whatsapp"></i></div></a>
+         <a href=""><div class="main-fa"> <i class="fab fa-instagram"></i></div></a>
+ </div>
+    </div>
+</div> 
+<div class="local-nav">
+    <div class="samosa">
+        <h1>Samosa</h1>
+    </div>
+
+<div onclick="tog()" class="toggle">
+<div></div>
+<div></div>
+<div></div></div>
+</div>
+    <!-- navigation end -->
+       <div class="inform"> <center><h1>Portfolio</h1></center>
+        <div class="ray1"><hr class="hr-a">
+            <div class="green-h1">
+                <div class="h1-a"></div>
+                <div class="h1-b"></div>
+            </div><hr class="hr-b"></div>
+        </div><br><br>
+        <div class="tab">
+          <div class="tab-a" onclick="funa()" id="tab-a">All</div>
+          <div class="tab-b" onclick="funb()" id="tab-b">Brand</div>
+          <div class="tab-c" onclick="func()" id="tab-c">Design</div>
+          <div class="tab-d" onclick="fund()" id="tab-d">Graphic</div>
+        </div>
+    <div class="containerf">
+        <div class="mainf">
+            <div class="group">
+             <div class="rowa" id="row-a">  
+                                <div class="pic pic1">
+                                    <div class="shade">
+                                            <div class="shade-inform shade-box-a">
+                                                <h1>Project Name</h1><br>
+                                                <h3>#Design</h3>
+                                                <i class="fa fa-image"></i>
+                                            </div>
+                                        </div>
+                                    <div>
+                                        <img src="img1.jpg">
+                                    </div>
+                                    
+                                </div>
+                                    <div class="pic pic2">
+                                        <div class="shade">
+                                            <div class="shade-inform shade-box-b">
+                                            <h1>Project Name</h1>
+                                            <h3>#Design</h3>
+                                            <i class="fa fa-image"></i>
+                                            </div>
+                                        </div>
+                                        <img src="img6.jpg"></div>
+                            
+                                <div class="pic pic3">
+                                    <div class="shade">
+                                        <div class="shade-inform shade-box-c">
+                                        <h1>Project Name</h1>
+                                        <h3>#Design</h3>
+                                        <i class="fa fa-image"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img7.jpg"></div>
+                                
+                                </div>
+              <div class="rowb" id="row-b"> 
+                                    <div class="pic pic4">
+                                        <div class="shade">
+                                            <div class="shade-inform shade-box-d">
+                                            <h1>Project Name</h1>
+                                            <h3>#Design</h3>
+                                            <i class="fa fa-image"></i>
+                                            </div>
+                                        </div>
+                                        <img src="img2.jpg"></div>
+                                        <div class="pic pic5">
+                                            <div class="shade">
+                                                <div class="shade-inform shade-box-e">
+                                                <h1>Project Name</h1>
+                                                <h3>#Design</h3>
+                                                <i class="fa fa-image"></i>
+                                                </div>
+                                            </div>
+                                            <img src="img4.jpg"></div>
+                                    <div class="pic pic6">
+                                        <div class="shade">
+                                            <div class="shade-inform shade-box-f">
+                                            <h1>Project Name</h1>
+                                            <h3>#Design</h3>
+                                            <i class="fa fa-image"></i>
+                                            </div>
+                                        </div>
+                                        <img src="img8.jpg"></div>
+                                    </div>
+             <div class="rowc" id="row-c"> 
+                                    <div class="pic pic7">
+                                        <div class="shade">
+                                            <div class="shade-inform shade-box-g">
+                                            <h1>Project Name</h1>
+                                            <h3>#Design</h3>
+                                            <i class="fa fa-image"></i>
+                                            </div>
+                                        </div>
+                                        <img src="img3.jpg"></div>
+                                    <div class="pic pic8">
+                                        <div class="shade">
+                                            <div class="shade-inform shade-box-h">
+                                            <h1>Project Name</h1>
+                                            <h3>#Design</h3>
+                                            <i class="fa fa-image"></i>
+                                            </div>
+                                        </div>
+                                        <img src="img5.jpg"></div>
+                                    <div class="pic pic9">
+                                        <div class="shade">
+                                            <div class="shade-inform shade-box-i">
+                                            <h1>Project Name</h1>
+                                            <h3>#Design</h3>
+                                            <i class="fa fa-image"></i>
+                                            </div>
+                                        </div>
+                                        <img src="img9.jpg"></div>
+                                    
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function classToggle() {
+        const navs = document.querySelectorAll('.header')
+        
+        navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+      }
+      
+      document.querySelector('.toggle')
+        .addEventListener('click', classToggle);
+      </script>
+      <script>
+        function funa(){
+          document.getElementById("tab-a").style.backgroundColor = " #25ca7f";
+          document.getElementById("tab-b").style.backgroundColor = "transparent";
+          document.getElementById("tab-c").style.backgroundColor = "transparent";
+          document.getElementById("tab-d").style.backgroundColor = "transparent";
+          document.getElementById("row-b").style.display = "block";
+          document.getElementById("row-c").style.display = "block";
+          document.getElementById("row-a").style.display = "block";
+          document.getElementById("row-a").style.width = "350px";
+          document.getElementById("row-b").style.width = "350px";
+          document.getElementById("row-c").style.width = "350px";
+        }
+        function funb(){
+          document.getElementById("tab-b").style.backgroundColor = " #25ca7f";
+          document.getElementById("tab-a").style.backgroundColor = "transparent";
+          document.getElementById("tab-c").style.backgroundColor = "transparent";
+          document.getElementById("tab-d").style.backgroundColor = "transparent";
+          document.getElementById("row-b").style.display = "none";
+          document.getElementById("row-c").style.display = "none";
+          document.getElementById("row-a").style.display = "flex";
+          document.getElementById("row-a").style.width = "100%";
+          document.getElementById("row-a").style.flexWrap = "wrap";
+        }
+        function func(){
+          document.getElementById("tab-c").style.backgroundColor = " #25ca7f";
+          document.getElementById("tab-a").style.backgroundColor = "transparent";
+          document.getElementById("tab-b").style.backgroundColor = "transparent";
+          document.getElementById("tab-d").style.backgroundColor = "transparent";
+          document.getElementById("row-a").style.display = "none";
+          document.getElementById("row-c").style.display = "none";
+          document.getElementById("row-b").style.display = "flex";
+          document.getElementById("row-b").style.width = "100%";
+          document.getElementById("row-b").style.flexWrap = "wrap";
+        }
+        function fund(){
+          document.getElementById("tab-d").style.backgroundColor = " #25ca7f";
+          document.getElementById("tab-a").style.backgroundColor = "transparent";
+          document.getElementById("tab-c").style.backgroundColor = "transparent";
+          document.getElementById("tab-b").style.backgroundColor = "transparent";
+          document.getElementById("row-a").style.display = "none";
+          document.getElementById("row-b").style.display = "none";
+          document.getElementById("row-c").style.display = "flex";
+          document.getElementById("row-c").style.width = "100%";
+          document.getElementById("row-c").style.flexWrap = "wrap";
+        }
+      </script>
+</body>
+</html>

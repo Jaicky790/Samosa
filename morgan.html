@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           font-family:Open Sans,Arial,sans-serif;
+
+        }
+        body{
+            background: #f2f2f2;
+        }
+        .home{
+            width: 100%;
+            background:rgb(0,140,201);
+
+        }
+        .content{
+            width: 70%;
+            margin: auto;          
+            margin-top: 200px;
+            overflow: hidden;
+            background:rgb(0,140,201);
+            color: #fff;
+        }
+        .content h1 {
+                font-size: 120px;
+                text-align: center;
+                font-weight: bolder;
+        }
+       
+        .content p{
+            padding: 0 1%;
+            word-wrap: break-word;
+            letter-spacing: 0.8px;
+        }
+        nav{
+            width: 100%;
+            height: 74px;
+            display: flex;
+            justify-content: space-around;
+            overflow: hidden;
+            color: #fff;
+        }
+        nav  .rowa {
+            width: 36%;
+            height:74px;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            left: 15%;
+        }
+
+        nav  .rowb{
+            width: 20%;
+            height:74px;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            left: 4%;
+        }
+        nav .logo{
+            min-width:15%;
+            height: 74px;
+            position: relative;
+           left: -3.0%;
+            text-align: center;
+            font-size: 18px;
+        }
+        nav div p {
+                margin-top: 25px;
+                cursor: pointer;
+        }
+        .navhr{
+            width: 97%;
+            margin: auto;
+        }
+        .logo p{
+            font-size: 30px;
+            margin-top: 20px;
+            
+        }
+        .read{
+            margin: auto;
+            width: 130px;
+            height: 100px;
+            margin-top: 19px;
+        }
+        input{
+                font-size: 17px;
+                background: transparent;
+                position: relative;
+                padding: 20px;
+                border-radius: 50px;
+                border: 1px solid #fff;
+                cursor: pointer;
+                color: #fff;
+        }
+        input:hover{
+            background: #fff;
+            color: #000;
+        }
+        @media(max-width:940px){
+            nav .rowa,nav  .rowb{
+                display: none;
+            } 
+           
+        }
+        .contain{
+            width: 100%;
+            background: #f2f2f2;
+        }
+        .main{
+            width: 95%;
+            margin: auto;
+            background: #f2f2f2;
+        }
+        .about{
+            width: 100%;
+            color: #000;
+        }
+        .contain  .rowa{
+                width: 100%;
+                position: relative;
+                height: 400px;
+                top: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                cursor: pointer;
+        }
+        .contain .rowa .diva{
+            width: 67%;
+            background: #fff;
+            height: 400px;
+            display: flex;
+
+        }
+        .pic{
+            width: 50%;
+            position: relative;
+            height: 400px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .rowa .divb{
+            width: 30%;
+            background: #fff;
+            height: 400px;
+            margin-left: 3%;
+            
+        }
+        .contain  .rowb{
+                width: 100%;
+                position: relative;
+                height: 400px;
+                top: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                cursor: pointer;
+        }
+        .contain h4{
+            color: #03a9f7;
+        }
+        .contain h4,h3,h5{
+            padding-left: 50px;
+        }
+        .contain p{
+            padding:0 50px;
+            margin-top: 50px;
+        }
+        .contain h4,h3{
+            margin-top: 50px;
+        }
+        .contain .rowb .diva{
+            width: 67%;
+            background: #fff;
+            height: 400px;
+            margin-left: 3%;
+            display: flex;
+        }
+       .diva .detail, .diva .detail{
+            width: 50%;
+            height: 400px;
+        }
+        .contain .rowa div:hover,  .contain .rowb div:hover{
+            background: #d0cece;
+        }
+        .pic{
+            width: 50%;
+            position: relative;
+            height: 400px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .about .rowb .divb{
+            width: 30%;
+            background: #fff;
+            height: 400px;
+        }
+        .team{
+            width: 100%;
+            height: 800px;
+            display: flex;
+          
+        }
+        .team .box-a, .box-b, .box-c{
+            width: 32%;
+            height: 800px;
+            background: #fff;
+            display: block;
+        }
+        .team .box-a:hover, .box-c:hover{
+            background: #d0cece;
+        }
+        .team .box-b{
+            margin: auto;
+            background: transparent;
+            overflow: hidden;
+        }
+        .team .piece-a, .piece-b{
+            width: 100%;
+            height: 400px;
+        }
+       .team .box-b .porta{
+           width: 100%;
+           height: 380px;
+       }
+       .team .box-b .portb{
+           height: 400px;
+           background: #fff;
+           margin-top: 20px;
+       }
+       .team .box-b .porta{
+           background: #03a9f7;
+       }
+       
+       .team .port-b:hover{
+        background: #d0cece;
+       }
+       .team h2,.team h4{
+           padding-left: 50px;
+           margin-top: 50px;
+       }
+       .team .box-b .portb h4,h2 {
+           margin-top:30px;
+       }
+       .team h3{
+           color: #fff;
+           padding: 0 50px;
+       }
+       .people{
+           width: 100%;
+           height: 800px;
+           display: flex;
+           
+       }
+       .people .boxa{
+            width: 60%;
+            height: 100%;
+       }
+       .people .boxb{
+           width: 32%;
+           margin-left: 8%;
+           background: #fff;
+           color: #000;
+       }
+       .people .boxb .port-a{
+           width: 100%;
+           height: 50%;
+       }
+       .people .boxb .port-b{
+           width: 100%;
+           height: 50%;
+           margin-top: 0px;
+       }
+       .low{
+           width: 130px;
+           margin: auto;
+           margin-top: 100px;
+           
+       }
+       .people .boxb .port-b:hover{
+           background: #d0cece;
+       }
+       .people .child-deta{
+            position: absolute;
+            margin-top: -805px;
+            width: 30%;
+            height: 800px;
+            color: #fff;
+            overflow: hidden;
+       }
+       .people .child-deta h2{
+           padding: 0 50px;
+           margin-top: 150px;
+       }
+       .lo-btn{
+        color: grey;
+        border:1px solid grey;
+       }
+       .lo-btn:hover{
+           color: #fff;
+           background: grey;
+       }
+       .people .boxb .port-b h2{
+           padding: 0 50px;
+       }
+      
+        .footer{
+            width: 100%;
+            background: #fff;
+            height: 700px;
+            position: relative;
+        }
+        .footer .inner{
+            width: 80%;
+            position: absolute;
+            height: 500px;
+            background: #000;
+            margin-top: 100px;
+            left: 10%;
+            display: flex;
+            color: #000;
+        }
+        .footer .inner-div{
+            width: 33.2%;
+            background:#fff;
+            height: 100%;
+            text-align: center;
+        }
+        .footer .inner-div h3{
+            line-height: 25px;
+        }
+        .footer .inner-div p{
+           margin-top: 50px;
+           padding: 0 50px;
+        }
+        .footer .inner-b{
+            margin: auto;
+        }
+        .footer .inner-detail{
+            width: 100%;
+            height: 50%;
+            margin-top: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <nav>
+            <div class="logo"><p>Healthachi</p></div>
+            <div class="rowa">
+            <div><p>Ideas</p></div>
+            <div><p>People</p></div>
+            <div><p>What we do</p></div>
+            <div><p>About us</p></div><hr>
+        </div>
+        <div class="rowb">
+            <div><p>Client Login</p></div>
+            <div></div>
+        </div>
+        </nav><hr class="navhr">
+        <div class="content">
+            <h1>Healthachi</h1><hr>
+            <br><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At voluptatum blanditiis quia vero deleniti hic, vel magnam. Repellendus, maxime eum illum architecto sequi nobis laboriosam, ab incidunt vel corrupti fugit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint fugit fugiat est, distinctio itaque, error recusandae, reiciendis saepe voluptatibus aliquid alias repudiandae laudantium magni cupiditate odit maiores nobis illum veritatis.</p><br>
+           <div class="read"><input type="button" value="Read More"></div> <br>
+           <br>
+           <br>
+           <br>
+    </div>
+    </div>
+            <div class="contain">
+                <div class="main">
+                    <div class="about">
+                    <div class="rowa">
+                        <div class="diva">
+                            <div class="pic">
+                                <img src="pp.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h4>INVESTOR RELATIONS</h4>
+                                <h3>MORGAN STANLEY TO <br> ACQUIRE E*TRADE </h3><br>
+                                <h5>Feb 20,2020</h5>
+                            </div>
+                        </div>
+                        <div class="divb">
+                            <h4>WEALTH MANAGEMENT</h4>
+                            <h3>DEFICITS AND DEBT <br> COULD IMPACT MARKETS</h3>
+                            <h5>Feb 20,2020</h5>                                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit vitae adipisci fugit, molestiae aliquid officiis, vero ea consequatur atque incidunt, deleniti sequi repellat culpa similique neque? Error, eum esse?</P>
+
+                        </div>
+                    </div>
+                    <div class="rowb">
+                        <div class="divb">
+                            <h4>WEALTH MANAGEMENT</h4>
+                            <h3>THE SURPRISING <br> STRENGTH OF THE U.S. <br> CONSUMER </h3>
+                            <h5>Feb 20,2020</h5>                                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit vitae adipisci fugit, molestiae aliquid officiis, vero ea consequatur atque incidunt, deleniti sequi repellat culpa similique neque? Error, eum esse?</P>
+
+                        </div>
+                        <div class="diva">
+                            <div class="detail">
+                                <h4>INVESTOR RELATIONS</h4>
+                                <h3> STOCKS IN 2020:  <br> THROUGH THE BULLSEYE</h3>
+                                <h5>Feb 20,2020</h5>
+                                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit vitae adipisci fugit, molestiae aliquid officiis, vero ea consequatur atque incidunt, deleniti sequi repellat culpa similique neque? Error, eum esse?</P>
+                            </div>
+                            <div class="pic">
+                                <img src="pp.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </div><br>
+                    <br>
+                    <br>
+                    <br> <br>
+
+                    <div class="team">
+                        <div class="box-a">
+                            <div class="piece-a">
+                                <img src="img1.jpg" alt="">
+                            </div>
+                            <div class="piece-b">
+                                <h4>TECHNOLOGY</h4>
+                                <h2>YOU CAN BE A TECH <br> INNOVATOR AT MORGAN <br> STANLEY</h2>
+                                <h5>Feb 23,2020</h5><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque iste eius esse similique possimus explicabo distinctio quam. Incidunt quae quaerat architecto reiciendis sunt fuga dolor, autem nulla aspernatur quibusdam.</p>
+                            </div>
+                        </div>
+                        <div class="box-b">
+                             <div class="porta"><br><br><br>
+                                 <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam sequi odit rerum id porro totam debitis aliquid! Maxime id numquam dolorem officiis, sequi enim maiores totam qui, dignissimos minima excepturi?</h3>
+                             </div>
+                              <div class="portb"><br>
+                                  <h4>RESEARCH</h4>
+                                   <h2>ARE EUROPEANS STOCKS <br> REALLY THAT CHEAP</h2>
+                                   <h5>Feb 23,2020</h5><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore autem dicta est, modi ullam iste, laboriosam cumque, optio officiis harum id quis! Sequi a quas repudiandae eaque quibusdam blanditiis ipsa?</p>
+                              </div>
+                        </div>
+                        <div class="box-c">
+                            <div class="piece-a">
+                                <img src="img7.jpg" alt="">
+                            </div>
+                            <div class="piece-b">
+                                <h4>WEALTH MANAGEMENT</h4>
+                                <h2>FIVE WAYS TO USE <br> EXTRA COMPENSATION</h2>
+                                <h5>Feb 23,2020</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil nesciunt pariatur voluptates exercitationem distinctio quod maiores adipisci. Culpa commodi reiciendis, officiis, consequatur pariatur praesentium provident, necessitatibus ratione numquam perspiciatis aliquid!</p>
+                            </div>
+                        </div>
+                    </div><br>
+                    <br>
+                    <br>
+                    <br>
+
+                        <div class="people">
+                            <div class="boxa">
+                                <img src="popa.jpg" alt="">
+                                <div class="child-deta">
+                                    <h4>GIVING BACK</h4>
+                        <h2>THE MORGAN <br> STANLEY ALLIANCE <br> FOR CHILDREN'S <br> MENTAL HEALTH</h2><h5>Feb 23, 2020</h5>
+                                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae, reprehenderit incidunt error voluptates inventore ratione consectetur, fuga expedita magnam eaque id ipsam? Excepturi doloribus dolorem necessitatibus iusto perferendis maxime.</P>
+                                    
+                                </div>
+                            </div>
+                            <div class="boxb">
+                                <div class="port-a">
+                                    <img src="popb.png" alt=""></div>
+                                <div class="port-b"><br>
+                                    <h4>RESEARCH</h4>
+                                    <h2>GLOBAL GROWTH:  <br> DELAYED, NOT DERAILED </h2>
+                                    <h5>Feb 23, 2020</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officiis quas saepe perspiciatis. Quae magnam, necessitatibus eveniet modi sunt laborum! Impedit distinctio cum tenetur explicabo? Distinctio nulla similique doloremque ea!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                
+                        <div class="about">
+                            <div class="rowa">
+                                <div class="diva">
+                                    <div class="pic">
+                                        <img src="pp.jpg" alt="">
+                                    </div>
+                                    <div class="detail">
+                                        <h4>INVESTOR RELATIONS</h4>
+                                        <h3>MORGAN STANLEY TO <br> ACQUIRE E*TRADE </h3><br>
+                                        <h5>Feb 20,2020</h5>
+                                    </div>
+                                </div>
+                                <div class="divb">
+                                    <h4>WEALTH MANAGEMENT</h4>
+                                    <h3>DEFICITS AND DEBT <br> COULD IMPACT MARKETS</h3>
+                                    <h5>Feb 20,2020</h5>                                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit vitae adipisci fugit, molestiae aliquid officiis, vero ea consequatur atque incidunt, deleniti sequi repellat culpa similique neque? Error, eum esse?</P>
+        
+                                </div>
+                            </div>
+                            <div class="rowb">
+                                <div class="divb">
+                                    <h4>WEALTH MANAGEMENT</h4>
+                                    <h3>THE SURPRISING <br> STRENGTH OF THE U.S. <br> CONSUMER </h3>
+                                    <h5>Feb 20,2020</h5>                                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit vitae adipisci fugit, molestiae aliquid officiis, vero ea consequatur atque incidunt, deleniti sequi repellat culpa similique neque? Error, eum esse?</P>
+        
+                                </div>
+                                <div class="diva">
+                                    <div class="detail">
+                                        <h4>INVESTOR RELATIONS</h4>
+                                        <h3> STOCKS IN 2020:  <br> THROUGH THE BULLSEYE</h3>
+                                        <h5>Feb 20,2020</h5>
+                                        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit vitae adipisci fugit, molestiae aliquid officiis, vero ea consequatur atque incidunt, deleniti sequi repellat culpa similique neque? Error, eum esse?</P>
+                                    </div>
+                                    <div class="pic">
+                                        <img src="pp.jpg" alt="">
+                                    </div>
+                                </div>
+                                
+                            </div><br>
+                            </div> <div class="about">
+                                <div class="rowa">
+                                    <div class="diva">
+                                        <div class="pic">
+                                            <img src="pp.jpg" alt="">
+                                        </div>
+                                        <div class="detail">
+                                            <h4>INVESTOR RELATIONS</h4>
+                                            <h3>MORGAN STANLEY TO <br> ACQUIRE E*TRADE </h3><br>
+                                            <h5>Feb 20,2020</h5>
+                                        </div>
+                                    </div>
+                                    <div class="divb">
+                                        <h4>WEALTH MANAGEMENT</h4>
+                                        <h3>DEFICITS AND DEBT <br> COULD IMPACT MARKETS</h3>
+                                        <h5>Feb 20,2020</h5>                                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit vitae adipisci fugit, molestiae aliquid officiis, vero ea consequatur atque incidunt, deleniti sequi repellat culpa similique neque? Error, eum esse?</P>
+            
+                                    </div>
+                                </div>
+                                <div class="rowb">
+                                    <div class="divb">
+                                        <h4>WEALTH MANAGEMENT</h4>
+                                        <h3>THE SURPRISING <br> STRENGTH OF THE U.S. <br> CONSUMER </h3>
+                                        <h5>Feb 20,2020</h5>                                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit vitae adipisci fugit, molestiae aliquid officiis, vero ea consequatur atque incidunt, deleniti sequi repellat culpa similique neque? Error, eum esse?</P>
+            
+                                    </div>
+                                    <div class="diva">
+                                        <div class="detail">
+                                            <h4>INVESTOR RELATIONS</h4>
+                                            <h3> STOCKS IN 2020:  <br> THROUGH THE BULLSEYE</h3>
+                                            <h5>Feb 20,2020</h5>
+                                            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sit vitae adipisci fugit, molestiae aliquid officiis, vero ea consequatur atque incidunt, deleniti sequi repellat culpa similique neque? Error, eum esse?</P>
+                                        </div>
+                                        <div class="pic">
+                                            <img src="pp.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+    
+                </div>
+            </div>
+                    <div class="footer">
+                        <center><h2 style="margin-top: 50px;">Careers</h2></center>
+                        <div class="inner">
+                            <div class="inner-div">
+                                <div></div>
+                                <div class="inner-detail">
+                                    <h3>STUDENTS <br>& GRADUATES</h3>
+                                    <p>Talented, intelligent and passionate people have made Morgan Stanley the firm it is today. If you want to work with and learn from the best in the business, there’s no better place to start. </p>
+                                </div>
+                            </div>
+                            <div class="inner-div inner-b">
+                                <div></div>
+                                <div class="inner-detail">
+                                    <h3>EXPERIENCED <br> PROFESSIONALS</h3>
+                                    <p>When you’re ready to advance your career, team up with global thought leaders, and make a real difference in the world, you’re ready to work with Morgan Stanley.</p>
+                                </div>
+                            </div>
+                            <div class="inner-div">
+                        <div></div>
+                        <div class="inner-detail">
+                            <h3>FINANCIAL <br> ADVISORS</h3>
+                            <p>Our Financial Advisor Associates are the lifeblood of the firm, and our experienced Financial Advisors are the beating heart. It’s time to take your business to another level.</p>
+                        </div></div>
+                    </div>
+                    </div>
+                        <h2 style="color: #000; margin-left: 50%;">Our Profiles</h2>
+            
+    
+</body>
+</html>

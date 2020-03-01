@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ user-select: none;
+            padding: 0;
+            margin: 0;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            color: #fff;
+            box-sizing: border-box;
+        }
+        body{
+            background: #0e0f10;
+ 
+        }
+        .containere{
+            width: 90%;
+            background: #0e0f10;
+            position: relative;
+            left: 10%;
+
+        }
+        .green-h1{
+        width: 34px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        top: 0px;
+        display: flex;
+   
+    }
+        .ray1{
+        width: 100px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        top: 50px;
+    }
+        .ray1 .hr-a{
+        width: 32px;
+        position: relative;
+       top: 50%; 
+        color: #25ca7f;
+    }
+    .ray1 .hr-b{
+        width: 32px;
+        position: relative;
+       top: -50%;
+      float: right;
+      color: #25ca7f;
+      left: 4px;
+    }
+    .h1-a{
+        width: 16px;
+        height: 16px;
+        border-radius: 50px 50px 0px 50px;
+        transform: rotate(-45deg);     margin: auto;
+        border: 2px solid #25ca7f;
+    }
+    .h1-b{
+        width: 16px;
+        height: 16px;
+        border: 2px solid #25ca7f;
+        border-radius: 50px 50px 50px 0px;
+        transform: rotate(45deg);     margin: auto;
+        position: relative;
+        left: 5px;
+    }
+        .blog{
+            position: relative;
+            top: 50px;
+        }
+        .maine{
+            width: 95%;
+            position: relative;
+            background: #0e0f10;
+            left: 2.5%;
+
+
+        }
+        .video{
+            position: relative;
+            top: 100px;
+            margin: 15px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+        .content{
+            position: relative;
+            margin: 40px 5px;
+            width: 400px;
+            background: #000;
+            overflow: hidden;
+        }
+       .content  img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: .5s;
+        }
+        .content  img:hover{
+            width: 110%;
+            height: 110%;
+            border-radius: 10px;
+            position: relative;
+        }
+        .img{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        .content{
+            border-radius: 10px;
+        }
+  
+        h3{
+            text-align: center;
+        }
+        .blog-details{
+                line-height: 30px;
+                text-align: center;
+        }
+       
+        
+        input{
+            background: #0e0f10;
+            height: 30px;
+            font: 1em sans-serif;
+            width: 30%;
+            border: 0;
+        }
+       .hr{
+            width: 30%;
+           margin: auto;
+           color: #25ca7f;
+          
+        }
+        input:hover{
+            color: #25ca7f;
+        }
+        input:hover ~ .hr{
+            width: 0px;
+            height: 30px;
+            position: relative;
+            left: -15%;
+            top: -30px;
+        }
+        .local-nav{
+        background: #000;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+        float: right;
+        color: #fff;
+         display: none;
+    }
+    .toggle{
+        float: right;
+        margin-right: 5%;
+        margin-top: -42px;
+        z-index: 1;
+    }
+    .toggle div{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin-top: 5px;
+        position: relative;
+    }
+    .samosa{
+        width: 200px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .samosa h1{
+        text-align: center;
+    }
+       
+    @media (max-width:1438px){
+            .row-c{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+           }
+           
+           @media (max-width:900px){
+            .header{
+                display: none;
+            }
+            .local-nav{
+                display: block;
+            }
+            .containere{
+                width: 100%;
+                position: relative;
+                left: 0;
+            }
+            
+           
+           }
+           @media (max-width:1000px){
+               .content{
+                   width: 300px;
+               }
+           }
+           @media (max-width:660px){
+               .content{
+                   width:100%;
+               }
+           }
+          
+      
+
+         /* navigation start */
+.header{
+        background:rgb(12, 13,15);
+        width: 10%;
+        min-width: 80px;
+        height: 100%;
+        position: fixed;
+        z-index: 2;
+        border-right: 2px solid #000;
+
+    }
+    .icon{
+        width: 50%;
+        min-width: 60px;
+        height: 430px;
+        position: relative;
+        margin: auto; 
+    }
+    .fa-cont{
+        width: 70%;
+        height: 430px;
+        position: relative;
+        margin: auto;
+    }
+   
+    .fa-cont i{
+           font-size: 30px;
+           color: #fff;
+            position: relative;
+            margin: auto;
+           margin-top: 20px;
+           background: #000;
+      
+        }
+      
+    .logo{
+        width: 100%;
+        position: relative;
+        height: 90px;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        border-bottom: 5px solid #000;
+    }
+    .logo-img{
+        position: relative;
+        margin:auto;
+        width: 50%;
+    }
+    .Navbar__ToggleShow {
+    display: block;
+  }
+    .main-fa{
+        width: 100%;
+        margin: auto;
+    }
+    .deal{
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        border-top: 5px solid #000;
+    }
+    .deal-box{
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+    .deal i{
+        font-size:20px ;
+        position: relative;
+        left: 25%;
+        top: 10px;
+        margin-top: 10px;
+    }
+    @media (max-height:650px){
+        .deal{
+            position: relative;
+            top: -70px;
+        }
+    }
+    /* <!-- navigation end --> */
+   
+
+    </style>
+</head>
+<body>
+    
+     <!-- navigation -->
+<div id="head" class="header">
+    <div class="logo">
+        <div class="logo-img">
+        <img src="logo.png">
+        </div>
+    </div>
+    <div class="icon">
+        <div class="fa-cont">
+            <a href="index.html"><div class="main-fa"> <i class="fax fas fa-house-damage"></i></div></a> 
+           <a href="about.html"><div class="main-fa"><i class="fax fas fa-user-tie"></i></div></a>
+           <a href="resume.html"><div class="main-fa"> <i class="fax fas fa-address-book"></i></div></a>
+           <a href="portfolio.html"><div class="main-fa"> <i class="fax fas fa-briefcase"></i></div></a>
+           <a href="blog.html"><div class="main-fa"> <i  class="fax fas fa-receipt"></i></div></a>
+           <a href="contact.html"><div class="main-fa"><i class="fax fas fa-envelope"></i></div></a>
+        </div>
+    </div>
+    <div class="deal">
+        <div class="deal-box">
+         <a href=""><div class="main-fa"> <i class=" fab fa-facebook-f"></i></div></a> 
+         <a href=""><div class="main-fa"><i class=" fab fa-whatsapp"></i></div></a>
+         <a href=""><div class="main-fa"> <i class="fab fa-instagram"></i></div></a>
+ </div>
+    </div>
+</div> 
+<div class="local-nav">
+    <div class="samosa">
+        <h1>Samosa</h1>
+    </div>
+
+<div onclick="tog()" class="toggle">
+<div></div>
+<div></div>
+<div></div></div>
+</div>
+    <!-- navigation end -->
+    <div class="containere">
+        <div class="maine">
+           
+           <center> <h1 class="blog">Blog</h1></center>
+            <div class="ray1"><hr class="hr-a">
+            <div class="green-h1">
+                <div class="h1-a"></div>
+                <div class="h1-b"></div>
+            </div><hr class="hr-b"></div>
+            <div class="video">
+                <div class="row-a">
+                <div class="content content-1">
+                    <div class="img container-1"><img src="img-1.jpg"></div>
+                    <div class="blog-details">
+                        <h3> ROAD TO SUCCESS</h3>
+                        <p>     15 April 2019 . Lifestyle </p>
+                          <input class="pp"type="button" value="Read More"><hr class="hr"><br>
+                    </div>
+                </div>
+                    
+                <div class="content content-4">
+                    <div class="img container-4"><img src="img-4.jpg"></div>
+                    <div class="blog-details">
+                        <h3> ROAD TO SUCCESS</h3>
+                        <p>     15 April 2019 . Lifestyle </p>
+                        <input type="button" value="Read More"><hr class="hr"><br>
+                    </div>
+                    
+                </div>
+               
+            </div>
+            <div class="row-b">
+                
+                <div class="content content-2">
+                    <div class="img container-2"><img src="img-2.jpg"></div>
+                    <div class="blog-details">
+                        <h3> ROAD TO SUCCESS</h3>
+                        <p>     15 April 2019 . Lifestyle </p>
+                        <input type="button" value="Read More"><hr class="hr"><br>
+                    </div>   
+                </div>
+                <div class="content content-5">
+                    <div class="img container-5"><img src="img-5.jpg"></div>
+                    <div class="blog-details">
+                        <h3> ROAD TO SUCCESS</h3>
+                        <p>     15 April 2019 . Lifestyle </p>
+                        <p style="text-align: left; margin-left: 20px; margin-top: 10px;">Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
+
+                        <input type="button" value="Read More"><hr class="hr"><br>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row-c">
+
+                <div class="content content-3">
+                    <div class="img container-3"><img src="img-3.jpg"></div>
+                    <div class="blog-details">
+                        <h3> ROAD TO SUCCESS</h3>
+                        <p>     15 April 2019 . Lifestyle </p>
+                        <p style="text-align: left; margin-left: 20px; margin-top: 10px;">Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
+                        <input type="button" value="Read More"><hr class="hr"><br>
+                    </div> 
+                </div>
+                
+
+
+                <div class="content content-6">
+                    <div class="img container-6"><img src="img-6.jpg"></div>
+                    <div class="blog-details">
+                        <h3> ROAD TO SUCCESS</h3>
+                        <p>     15 April 2019 . Lifestyle </p>
+                        <input type="button" value="Read More"><hr class="hr"><br>
+                    </div>
+                    
+                </div>
+              
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function classToggle() {
+        const navs = document.querySelectorAll('.header')
+        
+        navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+      }
+      
+      document.querySelector('.toggle')
+        .addEventListener('click', classToggle);
+      </script>
+</body>
+</html>

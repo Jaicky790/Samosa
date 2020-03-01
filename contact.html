@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <link rel="stylesheet" href="font//css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{ user-select: none;
+        padding: 0;
+        margin: 0;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+    body{
+        background: #0e0f10;
+}
+    .page3-h1{
+        position: relative;
+        top: 70px;
+        color: #fff;
+    }
+    .containerc{
+        width: 90%;
+        background: #0e0f10;
+        position: relative;
+        left: 10%;
+    }
+    
+    .mainc{
+            width: 95%;
+            background:#0e0f10;
+            margin: auto;
+            overflow: hidden;
+    }
+    .green-h1{
+        width: 40px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        top: 0px;
+        display: flex;
+   
+    }
+        .ray1{
+        width: 115px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        top: 60px;
+    }
+        .ray1 .hr-a{
+        width: 32px;
+        position: relative;
+       top: 50%; 
+        color: #25ca7f;
+        left: 3px;
+    }
+    .ray1 .hr-b{
+        width: 32px;
+        position: relative;
+       top: -50%;
+      float: right;
+      color: #25ca7f;
+    }
+    .h1-a{
+        width: 16px;
+        height: 16px;
+        border-radius: 50px 50px 0px 50px;
+        transform: rotate(-45deg);     margin: auto;
+        border: 2px solid #25ca7f;
+    }
+    .h1-b{
+        width: 16px;
+        height: 16px;
+        border: 2px solid #25ca7f;
+        border-radius: 50px 50px 50px 0px;
+        transform: rotate(45deg);     margin: auto;
+        position: relative;
+        left: 5px;
+    }
+    .contact{
+        width: 100%;
+        position: relative;
+        top: 160px;
+        height: auto;
+        background: #000;
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .row-a{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        position: relative;
+        top: 50px;
+        box-sizing: border-box;
+
+    }
+    .bus{
+        width: 100%;
+        position: relative;
+        height: 50px;
+        background: #000;
+                margin: auto;
+        display: flex;
+    }
+  .row-a  .bus  div  input{
+        position: relative;
+        height: 50px;
+        width: 100%;
+        border:0 ;
+        padding: 0 10px;
+        font: 1em sans-serif;
+        color: #000;
+        border: 0 solid #000;
+        background: #000;
+        color: #fff;
+        display: flex;
+    }
+  
+   
+    .row-a .bus div{
+        width: 45%;
+        position: relative;
+        margin-left:30px ;
+
+    }
+.textarea{
+    width: 97%;
+    position: relative;
+    left: 27px;
+}
+    .msg{
+        padding: 20px;
+        max-width: 96%;
+        min-width: 96%;
+        margin-top: 100px;
+        background: #000;
+        color: #fff;
+        border: 0 solid #000;
+    }
+  .sub{
+      margin: auto;
+      width: 200px;
+      height: 60px;
+  }
+    .sub .mit{
+        width: 200px;
+      height: 55px;
+        font: 1em sans-serif;
+       background: rgb(12, 13,15);
+        border: 0;
+        margin-top: -20px;
+        text-align: center;
+        line-height: 54px;
+        border-radius: 3px;
+        color:  #25ca7f;
+    }
+   .bus-hr{
+        width: 100%;
+       color: #25ca7f;
+    }
+    .msg-hr{
+        width: 100%;
+        color: #25ca7f;
+        top:100px;
+    }
+    .loca{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        top: 400px;
+        display: flex;
+        color: #fff;
+        background: #000;
+        border-radius: 10px;
+    }
+    .loca .local{
+        width: 32%;
+        height: 200px;
+        position: relative;
+        margin: auto;
+        color: #fff;
+        top: 0px;
+        
+    }
+    .loca i{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+   
+    .local div{
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        top: 20px;
+    }
+    .local p{
+        position: relative;
+        top: 30%;
+        text-align: center;
+    }
+    .last{
+        width: 100%;
+        height: 300px;
+        background: #777;
+        margin-top: 500px;
+        border-radius: 10px;
+    }
+    .local-nav{
+        background: #000;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+        float: right;
+        color: #fff;
+         display: none;
+    }
+    .toggle{
+        float: right;
+        margin-right: 5%;
+        margin-top: -42px;
+        z-index: 1;
+    }
+    .toggle div{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin-top: 5px;
+        position: relative;
+    }
+    .samosa{
+        width: 200px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .samosa h1{
+        text-align: center;
+    }
+   
+    @media (max-width: 1100px){
+
+        .contact .row-a{
+            width: 100%;
+            height: 150px;
+        }
+       .contact .bus{
+                display: block;
+                width: 100%;
+                height: 150px;
+        }
+        .email{
+            margin-top: 20px;
+            width: 100%;
+        }
+        .row-a .bus div{
+        width: 100%;
+        position: relative;
+        margin-left:30px ;
+
+    }
+    .msg{
+        margin-top: 40px;
+        margin-left: -10px;
+
+
+    }
+    }
+
+    @media (max-width: 900px){
+        .containerc{
+            width: 100%;
+            left: 0;
+        }
+    .header{
+                display: none;
+            }
+            .local-nav{
+                display: block;
+            }
+            .msg{
+                position: relative;
+                left: -17px;
+                max-width: 94%;
+                min-width: 94%;
+                padding-left:35px;
+            }
+            .loca{
+                width: 100%;
+                height: 700px;
+                background:#000;
+                display: block;
+            }
+            .loca .local{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        margin: auto;
+        color: #fff;
+        top: 50px;
+        
+    }
+}
+
+@media (max-width: 550px){
+    .msg{
+                position: relative;
+                left: -17px;
+                max-width: 46%;
+                min-width: 86%;
+                padding-left:35px;
+            }
+           
+    }
+    
+
+    /* navigation start */
+.header{
+        background:rgb(12, 13,15);
+        width: 10%;
+        height: 100%;
+        min-width: 80px;
+        position: absolute;
+        position: fixed;
+        z-index: 2;
+        border-right: 2px solid #000;
+
+    }
+    .icon{
+        width: 50%;
+        height: 430px;
+        position: relative;
+        margin: auto;
+    }
+    .fa-cont{
+        width: 70%;
+        height: 430px;
+        position: relative;
+        margin: auto;
+    } 
+   
+    .fa-cont i{
+           font-size: 30px;
+           color: #fff;
+            position: relative;
+            margin: auto;
+           margin-top: 20px;
+           background: #000;
+        } 
+      
+    .logo{
+        width: 100%;
+        position: relative;
+        height: 90px;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        border-bottom: 5px solid #000;
+    }
+    .logo-img{
+        position: relative;
+        margin:auto;
+        width: 50%;
+    }
+    
+     .main-fa{
+        width: 100%;
+        margin: auto;
+    } 
+    .deal{
+        width: 100%;
+        height: 120px;
+        position: absolute;
+       bottom: 0;
+       border-top: 5px solid #000;
+    }
+    .deal-box{
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+    .deal i{
+        font-size:20px ;
+        position: relative;
+        left: 25%;
+        top: 10px;
+        margin-top: 10px;
+        color: #fff;
+    }
+    /* <!-- navigation end --> */
+   
+    @media (max-height:650px){
+        .deal{
+            position: relative;
+            top: -70px;
+        }
+    }
+    .Navbar__ToggleShow {
+    display: block;
+  }
+</style>
+<body>
+   
+    <!-- navigation -->
+<div id="head" class="header">
+    <div class="logo">
+        <div class="logo-img">
+        <img src="logo.png">
+    </div>
+    </div>
+    <div class="icon">
+        <div class="fa-cont">
+            <a href="index.html"><div class="main-fa"> <i class="fax fas fa-house-damage"></i></div></a> 
+           <a href="about.html"><div class="main-fa"><i class="fax fas fa-user-tie"></i></div></a>
+           <a href="resume.html"><div class="main-fa"> <i class="fax fas fa-address-book"></i></div></a>
+           <a href="portfolio.html"><div class="main-fa"> <i class="fax fas fa-briefcase"></i></div></a>
+           <a href="blog.html"><div class="main-fa"> <i  class="fax fas fa-receipt"></i></div></a>
+           <a href="contact.html"><div class="main-fa"><i class="fax fas fa-envelope"></i></div></a>
+        </div>
+    
+    </div>
+    <div class="deal">
+        <div class="deal-box">
+         <a href=""><div class="main-fa"> <i class=" fab fa-facebook-f"></i></div></a> 
+         <a href=""><div class="main-fa"><i class=" fab fa-whatsapp"></i></div></a>
+         <a href=""><div class="main-fa"> <i class="fab fa-instagram"></i></div></a>
+ </div>
+    </div>
+    
+</div> 
+<div class="local-nav">
+    <div class="samosa">
+        <h1>Samosa</h1>
+    </div>
+
+<div onclick="tog()" class="toggle">
+<div></div>
+<div></div>
+<div></div></div>
+</div>
+    <!-- navigation end -->
+    <div class="containerc">
+        <div class="mainc">
+            
+       <center> <h1 class="page3-h1">Contact</h1></center>
+        <div class="ray1"><hr class="hr-a">
+            <div class="green-h1">
+                <div class="h1-a"></div>
+                <div class="h1-b"></div>
+            </div><hr class="hr-b"></div>
+        <div class="contact">
+            <div class="row-a">
+                <div class="bus">
+
+                <div class="name">
+                <input type="text" placeholder="Name*" >
+                <hr class="bus-hr">
+            </div>
+            <div class="email">
+                <input type="text" placeholder="Email*"><hr class="bus-hr">
+            </div>
+            </div>
+        </div><br>
+        <div class="textarea">
+         <textarea class="msg" placeholder="message"  rows="3" cols="118"></textarea>  <hr class="msg-hr"></div>
+       <br><br>
+         <div class="sub">
+            
+             <input type = "submit" value="Submit" class="mit">
+         </div>
+        </div>
+
+        <div class="loca">
+            <div class="local">
+                <div><i class="fas fa-paper-plane"></i></div>
+                <p>example@example.com</p>
+                <br><p>Email</p>
+            </div>
+            <div class="local">
+                <div><i class="fas fa-map-marker-alt"></i></div>
+                <p>123 Lorem Ipsum, USA</p>
+                <br><p>Addres</p>
+            </div>
+            <div class="local">
+                <div><i class="fas fa-phone"></i></div>
+                <p>(+1) 123 456 7890</p>
+                <br><p>Phone</p>
+            </div>
+        </div>
+
+
+        <div class="last" id="map" data-latitude="40.712775" data-longitude="-74.005973" data-zoom="14" style="position: relative; overflow: hidden;"></div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    </div>
+    <script>
+        function classToggle() {
+        const navs = document.querySelectorAll('.header')
+        
+        navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+      }
+      
+      document.querySelector('.toggle')
+        .addEventListener('click', classToggle);
+      </script>
+</body>
+</html> 

@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+            box-sizing: border-box;
+        }
+       h1,h2{
+           color: #fff;
+       }
+       body{
+           background: #0e0f10;
+       }
+        .containerb{
+            background: #0e0f10;
+        width: 90%;
+        height: 2750px;
+        float: right;
+        display: flex;
+        justify-content: center;
+        max-height: 360vh;
+        }
+    .main{
+        width: 90%;
+        height: 2750px;
+        background: #0e0f10;
+    }
+    .h1{
+        position: relative;
+        top: 50px;
+        font-size: 40px;
+      text-align: center;
+        
+    }
+    .green-h1{
+        width: 40px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        top: 0px;
+        display: flex;
+    }
+    .ray1{
+        width: 100px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+        top: 50px;
+    }
+    .ray1 .hr-a{
+        width: 32px;
+        position: relative;
+       top: 50%; 
+        color: #25ca7f;
+    }
+    .ray1 .hr-b{
+        width: 32px;
+        position: relative;
+       top: -50%;
+      float: right;
+      color: #25ca7f;
+    }
+    .h1-a{
+        width: 16px;
+        height: 16px;
+        border-radius: 50px 50px 0px 50px;
+        transform: rotate(-45deg);     margin: auto;
+        border: 2px solid #25ca7f;
+    }
+    .h1-b{
+        width: 16px;
+        height: 16px;
+        border: 2px solid #25ca7f;
+        border-radius: 50px 50px 50px 0px;
+        transform: rotate(45deg);     margin: auto;
+    }
+    .introduction{
+        width: 100%;
+        height: 400px;
+        min-height: 450px;
+        background: rgb(7,7,7);
+       position: relative;
+        top: 100px;
+        flex-wrap: wrap;
+        color: #fff;   
+    }
+   
+  
+   .label{
+       width: 100%;
+       position: relative;
+       height: 50vh;
+       display: flex;
+       margin: auto;
+   }
+  .photo  img{
+       width: 20vw;
+       height: 20vw;
+       border-radius: 50%;
+       position: relative;
+       top: 30px;
+       left: 10px;
+   }
+   .introduction .me{
+       width: 75%;
+       height: 50vh;
+       float: right;
+       position: relative;
+       padding: 20px 20px;
+      
+   }
+   .intro-bot{
+       width: 100%;
+       position:absolute;
+       height: 70px;
+       top: 360px;
+       display: flex;
+   }
+   .intro-bot   .cir{
+       width: 3.5em;
+       min-width: 3.5rem;
+       min-height: 3.5rem;
+       max-height: 3.5rem;
+       border-radius: 50%;
+       position: relative;
+       left: 10px;
+       top: 5px;
+       border: 1px solid  #25ca7f !important;
+       overflow: hidden;
+   }
+   .intro-bot i{
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        left: 24%;
+        top: 21%;
+    }
+   .intro-bot .row-a{
+        display:flex;
+        height: 70px;
+        width: 50%;
+        position: relative;
+   }
+   .intro-bot .row-b{
+       display: flex;
+       width: 50%;
+       position: relative;
+   }
+   
+   .intro-bot .about{
+        width: 50%;
+        height: 70px;
+        position: relative;
+        margin: auto;
+        display: flex;
+   }
+   .intro-bot .content{
+        position: relative;
+       width: 190px;
+       line-height: 10px;
+   }
+   .intro-bot h6{
+       color: #25ca7f !important;
+       font-size: 13px;
+       position: relative;
+       left: 20px;
+       font-weight:normal;
+   }
+   .me h2{
+       position: relative;
+       top: 20px;
+       left: 10px;
+   }
+   .me h4{
+       position: relative;
+       padding: 10px;
+       color: #25ca7f !important;
+   }
+   .me p{
+       position: relative;
+       top: 15px;
+       padding: 10px;
+       letter-spacing: 0.8px;
+   }
+   .intro-bot .box-d{
+       width: 50%;
+       display: flex;
+   }
+   
+   .green{ 
+       position: relative;
+       height: 1px;
+       width: 100px;
+       min-width: 100px;
+       left: -95px;
+       top: 50px;
+      color: #25ca7f;
+   } 
+   .intro-bot p{
+       font-size: 16px;
+      margin-top: 20px;
+      margin-left: 20px;
+       
+   }
+    .interest{
+        width: 100%;
+        height: 250px;
+        background:#000;
+        position: relative;
+        color: #fff;
+        
+        
+    }
+    .interest p{
+        text-align: center;
+         margin-top: -20px;
+    }
+    .int-main{
+        width: 97%;
+        position: relative;
+        height: 200px;
+        margin:auto;
+        top: 25px;
+    }
+     .interest .row-a{
+        width: 100%;
+        position: relative;
+        height: 90px;
+        display: flex;
+       
+    } 
+    .interest .row-a .col-a{
+        width: 50%;
+        position: relative;
+        height: 90px;
+        display: flex;
+    }
+    .interest .row-a .col-b{
+        width: 50%;
+        position: relative;
+        height: 90px;
+        display: flex;
+    }
+    .interest .row-b .col-c{
+        width: 50%;
+        position: relative;
+        height: 90px;
+        display: flex;
+    }
+    .interest .row-b .col-d{
+        width: 50%;
+        position: relative;
+        height: 90px;
+        display: flex;
+    }
+    .interest .row-b{
+        width: 100%;
+        position: relative;
+       top: 20px;
+        height: 90px;
+        display: flex;
+    } 
+    .interest .row-a div{
+        width: 200px;
+        height: 50px;
+        background: #0e0f10;
+        margin: auto;
+        border-radius: 10px;
+    }
+    .interest .row-b div{
+        width: 200px;
+        height: 50px;
+   background: #0e0f10 ;    
+        margin: auto;
+        border-radius: 10px;
+    }
+    .interest .row-a div:hover, .interest .row-b div:hover{
+       background: #000;
+    }
+    .interest .row-a hr, .interest .row-b hr{
+    position: relative;
+    width: 3px;
+    height: 50px;
+    background: #000;
+    border: none;
+    margin: -27.5px 0 0px 50px;
+
+}
+.interest i{
+    color: #25ca7f;
+    font-size: 25px;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+    .h2{
+        position: relative;
+        top: 50px;
+        text-align: center;
+        font-size: 40px; 
+         padding: 100px;
+    }
+    .ray2{
+        width: 100px;
+        height: 40px;
+        margin: auto;
+        position: relative;
+        top: -50px;
+    }
+    .ray2 .circle{
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 3px solid #25ca7f;
+        margin: auto;
+        position: relative;
+        top: 30%;
+    }
+    .ray2 .hr-a{
+            width: 35px;
+            color: #25ca7f;
+            position: relative;
+            top: 50%;
+    }
+    .ray2 .hr-b{
+        width: 35px;
+            color: #25ca7f;
+            position: relative;
+            float: right;
+            top:10%;
+    }
+   .h3{
+        position: relative;
+        top: 50px;
+        font-size: 40px;
+        text-align: center;
+        padding: 20px;
+        
+    
+   }
+   .service i{
+       font-size: 30px;
+       position: relative;
+       top: 25%;
+      
+   }
+   .service{
+       width: 100%;
+       height: 450px;
+       position: relative;
+       top: 80px;
+       color: white;
+      
+   }
+   .service div section {
+    width: 70px;
+         height: 70px;
+           position: relative;
+           margin: auto;
+           background:#0e0f10 ;
+           border-radius: 50%;
+           top: 10px;
+           overflow: hidden;
+           border: 1px solid #25ca7f;
+   }
+  
+   .service  .row-a{
+       width: 100%;
+       height: 200px;
+       display: flex;
+       position: relative;
+
+   }
+   .service  .row-b{
+        top: 30px;
+       width: 100%;
+       height: 200px;
+       display: flex;
+       position: relative;
+
+   }
+   .service .row-a div{
+       width: 45%;
+       height: 250px;
+       margin: auto;
+       text-align: center;
+       background: #000;
+       border-radius: 10px;
+   }
+   .service .row-b div{
+       width: 45%;
+       height: 250px;
+       margin: auto;
+       margin-top: 70px;
+       text-align: center;
+       background: #000;
+       border-radius: 10px;
+   }
+   .service p{
+       padding: 0 20px;
+   }
+   .ray3{
+        width: 100px;
+        height: 40px;
+        margin: auto;
+        position: relative;
+        top: 20px;
+    }
+    .ray3 .circle{
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 3px solid #25ca7f;
+        margin: auto;
+        position: relative;
+        top: 30%;
+    }
+    .ray3 .hr-a{
+            width: 35px;
+            color: #25ca7f;
+            position: relative;
+            top: 50%;
+    }
+    .ray3 .hr-b{
+        width: 35px;
+            color: #25ca7f;
+            position: relative;
+            float: right;
+            top:10%;
+    }
+   .h4{
+     position: relative;;
+       top: 240px;
+       text-align: center;
+       font-size: 40px;
+   }
+   .test{
+        width: 100%;
+       height: 250px;
+       display: flex;
+       position: relative;
+       top: 280px;
+       color: #fff;
+   }
+   .test .box-a, .box-b{
+       width: 48%;
+       height: 250px;
+       margin: auto;
+       background: #000;
+       border-radius: 10px;
+       
+   }
+   .test .pic{
+       width: 100%;
+       height: 120px;
+       position: relative;
+       display: flex;
+       overflow: hidden;
+   }
+   .test .about{
+       height: 120px;
+       position: relative;
+       top: 10px;
+       padding-left: 20px;
+       padding-right: 20px;
+        letter-spacing: 0.8px;
+   }
+   .test .pic .img{
+             width: 70px;
+         height: 70px;
+           position: relative;
+           border-radius: 50%;
+           top: 20px;
+           left: 30px;
+           overflow: hidden;
+   }
+  .test img{
+       width: 100%;
+   }
+   .test .pic .detail{
+       position: relative;
+       left: 40px;
+       top: 40px;
+       line-height: 10px;
+      
+   }
+   .test .pic .detail p{
+       position: relative;
+       top: 10px;
+       color: grey;
+   }
+   .ray4{
+        width: 100px;
+        height: 40px;
+        margin: auto;
+        position: relative;
+        top: 230px;
+    }
+    .ray4 .circle{
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 3px solid #25ca7f;
+        margin: auto;
+        position: relative;
+        top: 30%;
+    }
+    .ray4 .hr-a{
+            width: 35px;
+            color: #25ca7f;
+            position: relative;
+            top: 50%;
+    }
+    .ray4 .hr-b{
+        width: 35px;
+            color: #25ca7f;
+            position: relative;
+            float: right;
+            top:10%;
+    }
+   .h5{
+    position: relative;;
+       top: 300px;
+       text-align: center;
+       font-size: 40px;
+   }
+   .price{
+       width: 100%;
+       position: relative;
+       height: 400px;
+       top: 350px;
+       display: flex;
+       color: #fff;
+       text-align: center;
+   }
+   .price .box{
+       width: 32%;
+       height: 440px;
+       position: relative;
+       margin: auto;
+       background: #000;
+       border-radius: 10px;
+       
+   }
+.price .basic{
+    width:100%;
+    text-align: center;
+    height: 50px;
+    position: relative;
+    top: 20px;
+}
+.price .basic-text{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top: 20px;
+}
+.basic-text p{
+    margin-top: 20px;
+}
+.price .pay{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: 50px;
+}
+.basic hr{
+    color: #0e0f10;
+    border: 2px solid #0e0f10;
+}
+.cost{
+   position: relative;
+    width: 120px;
+    background: #0e0f10;
+    height: 35px;
+    font-size: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+    margin: auto;
+}
+.cost p{
+   position: relative;
+   top:4px; 
+   
+        }
+        .hr{
+            width: 30%;
+            margin: auto;
+            position: relative;   
+              color: #25ca7f;
+             top: -20px;
+        }
+
+        .cost:hover ~ .hr{
+            width: 0px;
+            height: 35px;
+            position: relative;
+            left: -55px;
+            top: -55px;
+        }
+        .cost:hover{
+          color: #25ca7f;
+        }
+.intro-bot .box-d .cir{
+    background:transparent;
+   
+}
+
+.gol{
+    height: 70px;
+    width: 70px;
+    background: #000;
+    margin: auto;
+    border-radius:50% ;
+    margin-top: -40px;
+    border: 1px solid #25ca7f;
+}
+.price i {
+    position: relative;
+    font-size: 30px;
+    top: 25%;
+}
+.ray5{
+        width: 100px;
+        height: 40px;
+        margin: auto;
+        position: relative;
+        top: 290px;
+    }
+    .ray5 .circle{
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 3px solid #25ca7f;
+        margin: auto;
+        position: relative;
+        top: 30%;
+    }
+    .ray5 .hr-a{
+            width: 35px;
+            color: #25ca7f;
+            position: relative;
+            top: 50%;
+    }
+    .ray5 .hr-b{
+        width: 35px;
+            color: #25ca7f;
+            position: relative;
+            float: right;
+            top:10%;
+    }
+    .local-nav{
+        background: #000;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+        float: right;
+        color: #fff;
+         display: none;
+    }
+    .toggle{
+        float: right;
+        margin-right: 5%;
+        margin-top: -42px;
+        z-index: 1;
+    }
+    .toggle div{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin-top: 5px;
+        position: relative;
+    }
+    .samosa{
+        width: 200px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .samosa h1{
+        text-align: center;
+    }
+@media (max-width:850px){
+   
+    .introduction{
+                   height: 600px;
+               }
+               .intro-bot{
+                   position: relative;
+                   top: 40px;
+               }
+               .intro-bot .row-a{
+                   position: absolute;
+                   width: 100%;
+                  
+               }
+               .introdution .about{
+                   width: 500px;
+               }
+               .intro-bot .row-b{
+                  position: absolute;
+                  width: 100%;
+                  top: 90px;
+
+               }
+               .intro-bot .row-a .about{
+                    position: relative;
+               }
+                .intro-bot .box-d .about{
+                    position: relative;
+                    width: 190px;
+                }
+                
+
+               
+}
+
+@media (max-width:1100px){
+    body{
+        background: #0e0f10;
+    }
+   
+    .price{
+                    width: 100%;
+                    height: 1600px;
+                    display: block;
+                }
+                .gol{
+                   display: none;
+                }
+                .price .box{
+                    width: 100%;
+                    height:400px;
+                    margin-top: 50px;
+                }
+                .test {
+                    height: 700px;
+                    display: block;
+
+                }
+                .test .box-a, .box-b{
+                    position: relative;
+                    width: 100%;
+                    top: 50px;
+                }
+                .test .box-b{
+                    margin-top: 50px;
+                }
+
+                .interest{
+                    width: 100%;
+                    height: 370px;
+                    display: block;
+                    overflow: hidden;
+                }
+                .interest .box-b{
+                    position: relative;
+                    top: 0;
+                }
+                .interest .row-a .col-a{
+                    display: block;
+                }
+                .interest .row-a{
+                    position: relative;
+                    top: -20px;
+                    height: 200px;
+                }
+                .interest .row-a div{
+                    margin-top: 30px;
+                }
+                .interest .row-b{
+                    position: relative;
+                    top: -60px;
+                    height: 200px;
+                }
+                .interest .row-b div{
+                    margin-top: 30px;
+                }
+                .interest .row-a .col-b{
+                    display: block;
+                    position: relative;
+                }
+                .interest .row-b .col-c{
+                    display: block;
+                    position: relative;
+                    top: 30px;
+                }
+                .interest .row-b .col-d{
+                    display: block;
+                    position: relative;
+                    top: 30px;
+                }
+                .interest hr{
+                    position: relative;
+                    width: 3px;
+                    height: 50px;
+                    background: #000;
+                }
+}
+
+
+@media (max-width:600px){
+         
+            .introduction{
+                width: 100%;
+                height: 1150px;
+                display: block;
+    
+            }
+        
+            .label{
+                width: 100%;
+                height: 600px;
+                display: block;
+                position: absolute;
+            }
+            .label img{
+                width: 200px;
+                height: 200px;
+               
+            }
+            .label .photo{
+                width: 200px;
+                margin: auto;
+                
+            }
+            .introduction .me{
+                 width: 90%;
+                height: 400px;
+                position: relative;
+                margin-top: 50px;
+                
+
+            }
+            .intro-bot .about{
+                width: 100%;
+                height: 50px;
+               
+            }
+            .intro-bot{
+                width: 100%;
+                display: block;
+                position: absolute;
+                height: 300px;
+              top: 850px;
+                text-align: center;
+                line-height: 15px;
+}
+            .intro-bot .row-a{
+                display: block;  
+            }
+            .intro-bot .row-b{
+                display: block;
+            }
+             .intro-bot .row-a  .who-b {
+                 position: relative;
+                 top: 20px;
+             }
+             .intro-bot .row-a .about{
+             width: 70%;
+             }
+             .intro-bot .row-b .about {
+                 position: relative;
+                 top: 50px;  width: 70%;
+             }
+             
+             .intro-bot .row-b .box-d{
+                position: relative;
+                top: 70px;
+                width: 50%;
+             }
+                .service{
+                    width: 100%;
+                    height: 1500px;
+                    display: block;
+                }
+
+                .service .row-a{
+                    display: block;
+                    height: 680px;
+                }
+                .service .row-a div{
+                    width: 100%;
+                    height: 300px;
+                    position: relative;
+                    top: 10px;
+                
+                }
+                .service .row-a .ser-box-b{
+                        margin-top: 50px;
+                }
+
+                .service .row-b{
+                    position: relative;
+                    height: 700px;
+                    display: block;
+                }
+                .service .row-b div{
+                    width: 100%;
+                    height: 300px;
+                position: relative;
+                top: 20px;
+                }
+                .service .row-b .ser-box-d{
+                        margin-top: 50px;
+                }
+
+
+               
+
+                
+}
+@media (max-width: 550px){
+   
+    .introduction .label p{
+        font-size: 16px;
+    }
+  
+    .h2{
+        margin-left: -60px;
+    }
+    .interest{
+        width: 100%;
+        height: 650px;
+        
+    }
+
+    .interest .row-a{
+        display: block;
+        margin: auto;
+        height: 300px;
+        margin-top:-20px ;
+        }
+    .interest .row-a .col-b div{
+        position: relative;
+        top: 40px;
+        margin-right: -99px;
+        
+
+       
+    }
+    .interest .row-b{
+        position: relative;
+        top: -50px;
+        height: 320px;
+        display: block; 
+
+    }
+    .interest .row-b .col-d div {
+        position: relative;
+        margin-right: -99px;
+        top: 30px;
+
+       
+    }
+    .interest .col-a div {
+        margin-right: -99px;
+    }
+    .interest  .col-c div{
+        margin-top: 30px;
+        margin-right: -99px;
+    }
+    .test .box-a{
+        width: 100%;
+        height: 300px;
+    }
+    .test .box-b{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: 50px;
+    }
+}
+
+@media (max-width: 900px){
+    .header{
+                display: none;
+                z-index: 1;
+            }
+            .local-nav{
+                display: block;
+            }
+            .containerb{
+                width: 100%;
+                left: 0;
+            }
+}
+
+
+
+
+
+/* navigation start */
+.header{
+        background:rgb(12, 13,15);
+        width: 10%;
+        height: 100%;
+        min-width: 80px;
+        position: fixed;
+        z-index: 2;
+        border-right: 2px solid #000;
+
+    }
+    .icon{
+        width: 50%;
+        height: 430px;
+        position: relative;
+        margin: auto;
+    }
+    .fa-cont{
+        width: 70%;
+        height: 430px;
+        position: relative;
+        margin: auto;
+    }
+    .Navbar__ToggleShow {
+    display: block;
+  }
+    .fa-cont i{
+           font-size: 30px;
+           color: #fff;
+            position: relative;
+            margin: auto;
+           margin-top: 20px;
+           background: #000;
+           cursor: pointer;
+        }
+      
+    .logo{
+        width: 100%;
+        position: relative;
+        height: 90px;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        border-bottom: 5px solid #000;
+    }
+    .logo-img{
+        position: relative;
+        margin:auto;
+        width: 50%;
+    }
+   
+    .main-fa{
+        width: 100%;
+        margin: auto;
+    }
+    .deal{
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        border-top: 5px solid #000;
+    }
+    .deal-box{
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+    .deal i{
+        font-size:20px ;
+        position: relative;
+        left: 25%;
+        top: 10px;
+        margin-top: 10px;
+         color: #fff;
+    }
+    @media (max-height:650px){
+        .deal{
+            position: relative;
+            top: -70px;
+        }
+    }
+    /* <!-- navigation end --> */
+
+    </style>
+</head>
+<body>
+   
+<!-- navigation -->
+<div id="head" class="header">
+    <div class="logo">
+        <div class="logo-img">
+        <img src="logo.png">
+        </div>
+    </div>
+    <div class="icon">
+        <div class="fa-cont">
+            <a href="index.html"><div class="main-fa"> <i class="fax fas fa-house-damage"></i></div></a> 
+           <a href="about.html"><div class="main-fa"><i class="fax fas fa-user-tie"></i></div></a>
+           <a href="resume.html"><div class="main-fa"> <i class="fax fas fa-address-book"></i></div></a>
+           <a href="portfolio.html"><div class="main-fa"> <i class="fax fas fa-briefcase"></i></div></a>
+           <a href="blog.html"><div class="main-fa"> <i  class="fax fas fa-receipt"></i></div></a>
+           <a href="contact.html"><div class="main-fa"><i class="fax fas fa-envelope"></i></div></a>
+        </div>
+    </div>
+    <div class="deal">
+        <div class="deal-box">
+         <a href=""><div class="main-fa"> <i class=" fab fa-facebook-f"></i></div></a> 
+         <a href=""><div class="main-fa"><i class=" fab fa-whatsapp"></i></div></a>
+         <a href=""><div class="main-fa"> <i class="fab fa-instagram"></i></div></a>
+ </div>
+    </div>
+</div> 
+<div class="local-nav">
+    <div class="samosa">
+        <h1>Samosa</h1>
+    </div>
+
+<div onclick="tog()" class="toggle">
+<div></div>
+<div></div>
+<div></div></div>
+</div>
+    <!-- navigation end -->
+
+
+
+
+
+
+    <div class="containerb">
+    <div class="main">
+        <h2 class="h1">About me</h2>
+        <div class="ray1"><hr class="hr-a">
+        <div class="green-h1">
+            <div class="h1-a"></div>
+            <div class="h1-b"></div>
+        </div><hr class="hr-b"></div>
+
+        <div class="introduction">
+            <div class="label">
+                <div class="photo">
+                    <img src="user-photo.jpg" alt="">
+                </div>
+
+                <div class="me">
+                    <h2>Kumar Aditya</h2><br>
+                    <h4> <i class="fas fa-map-marked-alt"></i> Bihar, INDIA</h4>
+                    <p>Hello! I’m Aditya a self-taught Digital Designer & Developer with over one years work experience. I started in my room, got pro frome home using enternet. Now I’m based in Bihar, India and working for myself and enjoying the life in the countryside.  <br><br>
+                    I have couple of hobbies but I like Space Science. I have already read most of the discoveries about new planets and many other things in the Universe. I am fond of Coading and new Discoveries . </p>
+                </div>
+            </div>
+            <div class="intro-bot">
+                
+                <div class="row-a">
+                             <div class="about">
+                             <div class="cir">
+                                 <i class="fas fa-award"></i>
+                             </div>
+                             <div class="content box-a"><p>1 years </p><br><h6>Experience</h6></div></div>
+                             
+                        <div class="about who-b">
+                            <div class="cir">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="content box-bb"><p>10+ Projects</p><br><h6>Completed</h6></div></div></div>
+                            <div class="row-b">  <div class="about">
+                     <div class="cir">
+                        <i class="fas fa-user-astronaut"></i>
+                     </div>
+                    <div class="content box-c"> <p> Freelance</p> <br> <h6> Available</h6> </div></div>
+               <div class="about box-d"> <p> DownloadCV</p><hr class="green"></div>
+            </div></div>
+            </div>
+       
+        <h2 class="h2">My  Interests </h2>
+        <div class="ray2">
+            <hr class="hr-a"></hr>
+            <div class="circle"></div>
+            <hr class="hr-b"></hr>
+        </div>
+        
+            <div class="interest">
+                <div class="int-main">
+                <section class="row-a">
+                <section class="col-a"><div class="box-a"><i class="fas fa-music"></i><p>Music</p><hr class="hr-a"></div>
+                    <div class="box-b"><i class="fas fa-route"></i><p>Travelling</p><hr class="hr-a"></div></section>
+                <section class="col-b"> <div class="box-c"><i class="fas fa-image"></i><p>Photos</p><hr class="hr-a"></div>
+                    <div class="box-d"><i class="fas fa-film"></i><p>Movies</p><hr class="hr-a"></div></section>
+                            </section>
+                <section class="row-b">
+                    <section class="col-c">  <div class="box-e"><i class="fas fa-space-shuttle"></i><p>Space</p><hr class="hr-a"></div>
+                    <div class="box-f"><i class="fas fa-book"></i><p>Books</p><hr class="hr-a"></div></section>
+                    <section class="col-d">
+
+                    <div class="box-g"><i class="fas fa-gamepad"></i><p>Games</p><hr class="hr-a"></div>
+                    <div class="box-f"><i class="fas fa-tree"></i><p>Forest</p><hr class="hr-a"></div></section>
+                </section>
+                </div>
+            </div>
+            
+            <h2 class="h3">Services</h2>
+            <div class="ray3">
+                <hr class="hr-a"></hr>
+                <div class="circle"></div>
+                <hr class="hr-b"></hr>
+            </div>
+
+            <div class="service">
+                        <section class="row-a">
+                <div class="ser-box-a">
+                    <section  class="pic">
+                        <i class="fas fa-desktop"></i>
+                    </section><br>
+                    <h2>Web Design</h2><br>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+                <div class="ser-box-b">
+                    <section  class="pic">
+                        <i class="fas fa-cogs"></i>
+                    </section><br>
+                    <h2>Web Development</h2><br>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+
+                </div>
+                        </section>
+            <section class="row-b">
+                <div class="ser-box-c">
+                    <section  class="pic">
+                        <i class="fas fa-mobile-alt"></i>
+                    </section><br>
+                    <h2>Responsive</h2><br>
+                    <p data-aos="fade-left" data-aos-delay="100" > Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+
+                </div>
+                <div class="ser-box-d">
+                    <section  class="pic">
+                        <i class="fas fa-medkit"></i>
+                    </section><br>
+                    <h2>Quick support</h2><br>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+
+                </div>
+            </section>
+        </div>
+
+        <h2 class="h4">Testinomials</h2>
+        <div class="ray4">
+            <hr class="hr-a"></hr>
+            <div class="circle"></div>
+            <hr class="hr-b"></hr>
+        </div>
+        <div class="test">
+          
+                <div class="box-a">
+                    <div class="pic">
+                        <div class="img">
+                            <img src="testimonial-3.jpg" alt="">
+                        </div>
+                        <div class="detail"><h2>Kumar Aditya</h2><p>web Designer</p></div>
+                        <div class="star"></div>
+                    </div>
+                    <div class = "about"><p>
+                        Curabitur eleifend tempor gnceleris eget placeratvel phasellus eget
+                        sem just metup consequat gestas facilisis eleifend posure tempor
+                        metus sem just metup consequat gestas facilisis eleifend posures
+                        temporureture.
+                    </p></div>
+                </div>
+                <div class="box-b">
+                    <div class="pic">
+                        <div class="img">
+                            <img src="testimonial-2.jpg" alt="">
+                        </div>
+                        <div class="detail"><h2>Kumar Aditya</h2><p>web Development</p></div>
+                        <div class="star"></div>
+                    </div>
+                    <div class="about"><p>
+                        Curabitur eleifend tempor gnceleris eget placeratvel phasellus eget
+                        sem just metup consequat gestas facilisis eleifend posure tempor
+                        metus sem just metup consequat gestas facilisis eleifend posures
+                        temporureture.
+                    </p></div>
+                </div>
+                       
+        </div>
+
+        <h2 class="h5">Price</h2> 
+         <div class="ray5">
+            <hr class="hr-a"></hr>
+            <div class="circle"></div>
+            <hr class="hr-b"></hr>
+        </div>
+
+        <div class="price">
+            <div class="box">
+                <div class="gol">
+                    <i class="fas fa-user"></i>
+                </div>
+                <section class="basic">
+                    <h1>Basic</h1><br><hr>
+                 </section>
+                 <section class="pay"><h2> $ 25 month </h2></section>
+               <section class="basic-text"> 
+                <p>Web Design</p>
+                <p>Web Development</p>
+                <p style="text-decoration: line-through; color: #777;">Responsive Design</p>
+                <p style="text-decoration: line-through; color: #777;">   Game Development</p></section>
+                <div class="cost"><p class="buy-now">Buy Now</p></div><hr class="hr">
+            </div>
+            <div class="box">
+                <div class="gol">      
+                                  <i class="fas fa-briefcase"></i>
+                </div>
+                <section class="basic">
+                    <h1>Standard</h1><br><hr>
+                 </section>
+                 <section class="pay"><h2> $ 40 month </h2></section>
+               <section class="basic-text"> 
+                <p>Web Design</p>
+                <p>Web Development</p>
+                <p>Responsive Design</p>
+                <p style="text-decoration: line-through; color: #777;">   Game Development</p></section>
+                <div  class="cost"><p class="buy-now">Buy Now</p></div><hr class="hr">
+            </div>
+            <div class="box">
+                <div class="gol">
+                    <i class="fas fa-globe"></i>
+
+                </div>
+                <section class="basic">
+                    <h1>Premium</h1><br><hr>
+                 </section>
+                 <section class="pay"><h2> $ 55 month </h2></section>
+               <section class="basic-text"> 
+                <p>Web Design</p>
+                <p>Web Development</p>
+                <p>Responsive Design</p>
+                <p>   Game Development</p></section>
+                <div  class="cost"><p class="buy-now">Buy Now</p></div><hr class="hr"><br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function classToggle() {
+    const navs = document.querySelectorAll('.header')
+    
+    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+  }
+  
+  document.querySelector('.toggle')
+    .addEventListener('click', classToggle);
+  </script>
+</body>
+</html>
